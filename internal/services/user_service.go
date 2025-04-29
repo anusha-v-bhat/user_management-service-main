@@ -189,7 +189,7 @@ func (s *UserService) validateRegistration(name, email, password string) error {
 		return errors.New("name is required")
 	}
 
-	if strings.Contains(email, "@") {
+	if strings.Contains(name, "@") {
 		return errors.New("invalid name format")
 	}
 
